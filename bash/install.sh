@@ -92,8 +92,8 @@ if [ ! -d "$APPS_DIR/Toltek.Bbb.WebV3/.git" ]; then
     echo "✅ Repository klonlandı."
 else
     cd "$APPS_DIR/Toltek.Bbb.WebV3"
-    git reset --hard
-    git pull origin main
+    sudo git reset --hard
+    sudo git pull origin main
     echo "✅ Repository güncellendi."
 fi
 
