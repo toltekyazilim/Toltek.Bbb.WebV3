@@ -87,11 +87,11 @@ done
 sudo chmod 777 "$SETTINGS_DIR" "$LOGS_DIR"
 
 echo "🔄 Repository güncelleniyor..."
-if [ ! -d "$APPS_DIR/Toltek.Bbb.webv3/.git" ]; then
+if [ ! -d "$APPS_DIR/Toltek.Bbb.WebV3/.git" ]; then
     sudo git clone "$REPO_URL" "$APPS_DIR/Toltek.Bbb.WebV3"
     echo "✅ Repository klonlandı."
 else
-    cd "$APPS_DIR/Toltek.Bbb.webv3"
+    cd "$APPS_DIR/Toltek.Bbb.WebV3"
     git reset --hard
     git pull origin main
     echo "✅ Repository güncellendi."
