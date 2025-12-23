@@ -1,0 +1,161 @@
+@import '_content/Toltek.AspNetCore.Components.Controls/Toltek.AspNetCore.Components.Controls.zwmb0h5e5f.bundle.scp.css';
+@import '_content/Toltek.Bbb.UI/Toltek.Bbb.UI.4l1es1ol3h.bundle.scp.css';
+
+/* /Components/Layout/ReconnectModal.razor.rz.scp.css */
+.components-reconnect-first-attempt-visible[b-lw0mne95jp],
+.components-reconnect-repeated-attempt-visible[b-lw0mne95jp],
+.components-reconnect-failed-visible[b-lw0mne95jp],
+.components-pause-visible[b-lw0mne95jp],
+.components-resume-failed-visible[b-lw0mne95jp],
+.components-rejoining-animation[b-lw0mne95jp] {
+    display: none;
+}
+
+#components-reconnect-modal.components-reconnect-show .components-reconnect-first-attempt-visible[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-show .components-rejoining-animation[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-paused .components-pause-visible[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-resume-failed .components-resume-failed-visible[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-retrying[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-retrying .components-reconnect-repeated-attempt-visible[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-retrying .components-rejoining-animation[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-failed[b-lw0mne95jp],
+#components-reconnect-modal.components-reconnect-failed .components-reconnect-failed-visible[b-lw0mne95jp] {
+    display: block;
+}
+
+
+#components-reconnect-modal[b-lw0mne95jp] {
+    background-color: white;
+    width: 20rem;
+    margin: 20vh auto;
+    padding: 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete;
+    animation: components-reconnect-modal-fadeOutOpacity-b-lw0mne95jp 0.5s both;
+    &[open]
+
+{
+    animation: components-reconnect-modal-slideUp-b-lw0mne95jp 1.5s cubic-bezier(.05, .89, .25, 1.02) 0.3s, components-reconnect-modal-fadeInOpacity-b-lw0mne95jp 0.5s ease-in-out 0.3s;
+    animation-fill-mode: both;
+}
+
+}
+
+#components-reconnect-modal[b-lw0mne95jp]::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: components-reconnect-modal-fadeInOpacity-b-lw0mne95jp 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes components-reconnect-modal-slideUp-b-lw0mne95jp {
+    0% {
+        transform: translateY(30px) scale(0.95);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes components-reconnect-modal-fadeInOpacity-b-lw0mne95jp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes components-reconnect-modal-fadeOutOpacity-b-lw0mne95jp {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.components-reconnect-container[b-lw0mne95jp] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#components-reconnect-modal p[b-lw0mne95jp] {
+    margin: 0;
+    text-align: center;
+}
+
+#components-reconnect-modal button[b-lw0mne95jp] {
+    border: 0;
+    background-color: #6b9ed2;
+    color: white;
+    padding: 4px 24px;
+    border-radius: 4px;
+}
+
+    #components-reconnect-modal button:hover[b-lw0mne95jp] {
+        background-color: #3b6ea2;
+    }
+
+    #components-reconnect-modal button:active[b-lw0mne95jp] {
+        background-color: #6b9ed2;
+    }
+
+.components-rejoining-animation[b-lw0mne95jp] {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .components-rejoining-animation div[b-lw0mne95jp] {
+        position: absolute;
+        border: 3px solid #0087ff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: components-rejoining-animation-b-lw0mne95jp 1.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+        .components-rejoining-animation div:nth-child(2)[b-lw0mne95jp] {
+            animation-delay: -0.5s;
+        }
+
+@keyframes components-rejoining-animation-b-lw0mne95jp {
+    0% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    4.9% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    5% {
+        top: 40px;
+        left: 40px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    }
+}
