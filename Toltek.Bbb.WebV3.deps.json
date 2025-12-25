@@ -41,7 +41,6 @@
           "Microsoft.AspNetCore.App.Internal.Assets": "10.0.1",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "10.0.1",
-          "Toltek.AspNetCore.Components.Radzen": "3.0.0",
           "Toltek.Bbb.DbV3": "3.0.0",
           "Toltek.Bbb.HttpApi": "3.0.0",
           "Toltek.Bbb.UI": "3.0.0",
@@ -2225,17 +2224,6 @@
           "lib/net8.0/Polly.RateLimiting.dll": {}
         }
       },
-      "Radzen.Blazor/8.4.2": {
-        "runtime": {
-          "lib/net10.0/Radzen.Blazor.dll": {
-            "assemblyVersion": "8.4.2.0",
-            "fileVersion": "8.4.2.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Radzen.Blazor.dll": {}
-        }
-      },
       "RestSharp/106.15.0": {
         "runtime": {
           "lib/netstandard2.0/RestSharp.dll": {
@@ -3815,21 +3803,6 @@
           "Toltek.AspNetCore.Components.Forms.dll": {}
         }
       },
-      "Toltek.AspNetCore.Components.Radzen/3.0.0": {
-        "dependencies": {
-          "Radzen.Blazor": "8.4.2",
-          "Toltek.AspNetCore.Components": "3.0.0"
-        },
-        "runtime": {
-          "Toltek.AspNetCore.Components.Radzen.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.AspNetCore.Components.Radzen.dll": {}
-        }
-      },
       "Toltek.AspNetCore.Components.Web/3.0.0": {
         "dependencies": {
           "Toltek.AspNetCore.Components": "3.0.0"
@@ -3993,7 +3966,6 @@
           "Toltek.AspNetCore.Components.Authorization": "3.0.0",
           "Toltek.AspNetCore.Components.Controls": "3.0.0",
           "Toltek.AspNetCore.Components.Forms": "3.0.0",
-          "Toltek.AspNetCore.Components.Radzen": "3.0.0",
           "Toltek.AspNetCore.Components.Web": "3.0.0",
           "Toltek.Bbb.Abstractions": "3.0.0"
         },
@@ -7009,13 +6981,6 @@
       "path": "polly.ratelimiting/8.4.2",
       "hashPath": "polly.ratelimiting.8.4.2.nupkg.sha512"
     },
-    "Radzen.Blazor/8.4.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0Vfv344eVZ1XnfAE1SEAV65fVvUJUqoU40gckKpMF50vPY0Ay3pKWALOGDRTWaJLn2xDgNQTo1pETZZdnLYe/A==",
-      "path": "radzen.blazor/8.4.2",
-      "hashPath": "radzen.blazor.8.4.2.nupkg.sha512"
-    },
     "RestSharp/106.15.0": {
       "type": "package",
       "serviceable": true,
@@ -7742,11 +7707,6 @@
       "sha512": ""
     },
     "Toltek.AspNetCore.Components.Forms/3.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.AspNetCore.Components.Radzen/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
