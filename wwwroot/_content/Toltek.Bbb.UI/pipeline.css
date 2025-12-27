@@ -1,0 +1,106 @@
+
+/* ================================
+   PIPELINE – GENEL
+================================ */
+.pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+/* ================================
+   STEP
+================================ */
+.pipeline-step {
+    width: 150px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* ================================
+   ICON CONTAINER (KRÝTÝK)
+================================ */
+.pipeline-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+}
+
+    /* ================================
+   FONT AWESOME FIX
+================================ */
+    .pipeline-icon i {
+        font-size: 22px;
+        line-height: 1; /* FA duotone overlap fix */
+        display: block;
+    }
+
+/* ================================
+   TITLES
+================================ */
+.pipeline-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.pipeline-subtitle {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.pipeline-count {
+    font-weight: 600;
+    margin-left: 4px;
+}
+
+/* ================================
+   CONNECTOR (OK)
+================================ */
+.pipeline-connector {
+    flex: 0 0 24px;
+    text-align: center;
+    font-size: 18px;
+    color: #cbd5e1;
+    opacity: 0.7;
+    transform: translateY(-6px);
+}
+
+/* ================================
+   COLORS
+================================ */
+.pipeline-secondary {
+    background-color: #6f42c1;
+}
+
+.pipeline-warning {
+    background-color: #fbbc04;
+}
+
+.pipeline-info {
+    background-color: #3bc9db;
+}
+
+.pipeline-success {
+    background-color: #22c55e;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .pipeline {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .pipeline-connector {
+        display: none;
+    }
+}
