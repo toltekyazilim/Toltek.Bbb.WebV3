@@ -2791,23 +2791,6 @@
           "lib/net10.0/Toltek.AspNetCore.Localization.dll": {}
         }
       },
-      "Toltek.AspNetCore.MultiTenancy/3.0.0": {
-        "dependencies": {
-          "Toltek.AspNetCore": "3.0.0",
-          "Toltek.Localization.Abstractions": "3.0.0",
-          "Toltek.MultiTenancy": "3.0.0",
-          "Toltek.Threading": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.AspNetCore.MultiTenancy.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.AspNetCore.MultiTenancy.dll": {}
-        }
-      },
       "Toltek.AspNetCore.OpenApi/3.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
@@ -3831,6 +3814,23 @@
         },
         "compile": {
           "Toltek.AspNetCore.Components.Web.dll": {}
+        }
+      },
+      "Toltek.AspNetCore.MultiTenancy/3.0.0": {
+        "dependencies": {
+          "Toltek.AspNetCore": "3.0.0",
+          "Toltek.Localization.Abstractions": "3.0.0",
+          "Toltek.MultiTenancy": "3.0.0",
+          "Toltek.Threading": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.AspNetCore.MultiTenancy.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.AspNetCore.MultiTenancy.dll": {}
         }
       },
       "Toltek.AspNetCore.Mvc/3.0.0": {
@@ -7359,13 +7359,6 @@
       "path": "toltek.aspnetcore.localization/3.0.0",
       "hashPath": "toltek.aspnetcore.localization.3.0.0.nupkg.sha512"
     },
-    "Toltek.AspNetCore.MultiTenancy/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VmgxPguUQOOB/UspQiS81ddg5FlZs7T0jACZfj9Zrv9gfw8yAoA8ts8ZS+0PAJzYRE+92r3a+tsWu47Uy38fWw==",
-      "path": "toltek.aspnetcore.multitenancy/3.0.0",
-      "hashPath": "toltek.aspnetcore.multitenancy.3.0.0.nupkg.sha512"
-    },
     "Toltek.AspNetCore.OpenApi/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -7810,6 +7803,11 @@
       "sha512": ""
     },
     "Toltek.AspNetCore.Components.Web/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.AspNetCore.MultiTenancy/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
