@@ -57,4 +57,78 @@
         content: "An error has occurred."
     }
 
- 
+/* ================================
+   GuickGrid
+================================ */
+
+/* Grid loading overlay */
+.grid-loading-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+
+
+/* Header (thead) düzeltmesi */
+.berry-grid thead th {
+    padding: 0.5rem 0.6rem;
+}
+/* Boþ satýrlarý pasif hale getir */
+.berry-grid tbody tr:not(:has(td:not(:empty))) {
+    height: 28px; /* normal satýrdan kýsa */
+    background-color: #fafbfc; /* Berry arka planý */
+}
+
+    
+
+    /* Boþ satýrlarda hover kapalý */
+    .berry-grid tbody tr:not(:has(td:not(:empty))):hover {
+        background-color: #fafbfc;
+    }
+    /* Boþ satýrlarda hover kapalý */
+    .berry-grid tbody tr:not(:has(td:not(:empty))):hover {
+        background-color: #fafbfc;
+    }
+
+/* Grid loading blur */
+.berry-grid.is-loading {
+    filter: blur(1px);
+    pointer-events: none;
+}
+
+    .berry-grid.is-loading tbody td {
+        background: linear-gradient( 90deg, #f1f3f5 25%, #e9ecef 37%, #f1f3f5 63% );
+        background-size: 400% 100%;
+        animation: shimmer 1.4s infinite;
+        color: transparent;
+    }
+
+/* Skeleton row */
+.skeleton-row td {
+    padding: 0.6rem;
+}
+
+.skeleton-line {
+    height: 12px;
+    width: 100%;
+    border-radius: 4px;
+    background: linear-gradient( 90deg, #f1f3f5 25%, #e9ecef 37%, #f1f3f5 63% );
+    background-size: 400% 100%;
+    animation: shimmer 1.4s ease infinite;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
