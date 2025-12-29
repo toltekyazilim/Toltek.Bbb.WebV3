@@ -1,3 +1,8 @@
+.bg-light-passive {
+    background-color: #f1f1f1 !important;
+    color: #585e75 !important;
+}
+
 .status-bar-safe-area {
     display: none;
 }
@@ -53,6 +58,3 @@
     }
 
  
-/* ================================
-   Blazor
-================================ */
