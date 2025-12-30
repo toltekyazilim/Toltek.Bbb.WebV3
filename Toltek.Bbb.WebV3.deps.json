@@ -1964,6 +1964,17 @@
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
         }
       },
+      "MudBlazor/8.15.0": {
+        "runtime": {
+          "lib/net9.0/MudBlazor.dll": {
+            "assemblyVersion": "8.15.0.0",
+            "fileVersion": "8.15.0.0"
+          }
+        },
+        "compile": {
+          "lib/net9.0/MudBlazor.dll": {}
+        }
+      },
       "Nito.AsyncEx.Context/5.1.2": {
         "dependencies": {
           "Nito.AsyncEx.Tasks": "5.1.2"
@@ -3997,6 +4008,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Components.QuickGrid": "10.0.1",
           "Microsoft.AspNetCore.SignalR.Client": "10.0.1",
+          "MudBlazor": "8.15.0",
           "Toltek.AspNetCore.Components.Authorization": "3.0.0",
           "Toltek.AspNetCore.Components.Controls": "3.0.0",
           "Toltek.AspNetCore.Components.Forms": "3.0.0",
@@ -6931,6 +6943,13 @@
       "sha512": "sha512-fgNw8Dxpkq7mpoaAYes8cfnPRzvFIoB8oL9GPXwi3op/rONftl0WAeg4akRLcxfoVuUvuUO2wGoVBr3JzJ7Svw==",
       "path": "mongodb.libmongocrypt/1.8.0",
       "hashPath": "mongodb.libmongocrypt.1.8.0.nupkg.sha512"
+    },
+    "MudBlazor/8.15.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iOJEnQ6tYGQPfPJaUazyC8H6pcczgaMX7vhUzrJPpB0WqEXNozwMfSzoOe2/JZmVWJcUfYZgKBeBU2Z27XY7Sw==",
+      "path": "mudblazor/8.15.0",
+      "hashPath": "mudblazor.8.15.0.nupkg.sha512"
     },
     "Nito.AsyncEx.Context/5.1.2": {
       "type": "package",
