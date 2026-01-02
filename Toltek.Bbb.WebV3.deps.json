@@ -41,6 +41,7 @@
           "Microsoft.AspNetCore.App.Internal.Assets": "10.0.1",
           "Microsoft.AspNetCore.Authentication.OpenIdConnect": "10.0.1",
           "Microsoft.AspNetCore.Components.WebAssembly.Server": "10.0.1",
+          "Toltek.AspNetCore.Components.Web": "3.0.0",
           "Toltek.Bbb.Client": "3.0.0",
           "Toltek.Bbb.DbV3": "3.0.0",
           "Toltek.Bbb.HttpApi": "3.0.0",
@@ -3038,6 +3039,24 @@
           "lib/net10.0/Toltek.CN.Abstractions.dll": {}
         }
       },
+      "Toltek.Data/3.0.0": {
+        "dependencies": {
+          "System.Linq.Dynamic.Core": "1.7.1",
+          "Toltek.AutoMapper": "3.0.0",
+          "Toltek.Data.Abstractions": "3.0.0",
+          "Toltek.EventBus.Abstractions": "3.0.0",
+          "Toltek.Uow.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Toltek.Data.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Toltek.Data.dll": {}
+        }
+      },
       "Toltek.DataTables.Abstractions/3.0.0": {
         "dependencies": {
           "System.Linq.Dynamic.Core": "1.7.1",
@@ -3103,6 +3122,24 @@
         },
         "compile": {
           "lib/net10.0/Toltek.Domain.Abstractions.dll": {}
+        }
+      },
+      "Toltek.Ef/3.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.1",
+          "Toltek.Data": "3.0.0",
+          "Toltek.Domain": "3.0.0"
+        },
+        "runtime": {
+          "lib/net10.0/Toltek.Ef.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net10.0/Toltek.Ef.dll": {}
         }
       },
       "Toltek.EventBus.Abstractions/3.0.0": {
@@ -3855,7 +3892,8 @@
       "Toltek.Bbb/3.0.0": {
         "dependencies": {
           "Toltek.AutoMapper": "3.0.0",
-          "Toltek.Bbb.Abstractions": "3.0.0"
+          "Toltek.Bbb.Abstractions": "3.0.0",
+          "Toltek.Cmd.Abstractions": "3.0.0"
         },
         "runtime": {
           "Toltek.Bbb.dll": {
@@ -3915,7 +3953,8 @@
       "Toltek.Bbb.Client/3.0.0": {
         "dependencies": {
           "Toltek.Bbb.Abstractions": "3.0.0",
-          "Toltek.Client": "3.0.0"
+          "Toltek.Client": "3.0.0",
+          "Toltek.Cmd.Abstractions": "3.0.0"
         },
         "runtime": {
           "Toltek.Bbb.Client.dll": {
@@ -3965,6 +4004,7 @@
         "dependencies": {
           "Toltek.Bbb.ApiClient": "3.0.0",
           "Toltek.Bbb.Domain": "3.0.0",
+          "Toltek.Cmd": "3.0.0",
           "Toltek.Platform.HttpApi": "3.0.0",
           "Toltek.Tasking": "3.0.0"
         },
@@ -4000,7 +4040,6 @@
           "Toltek.AspNetCore.Components.Authorization": "3.0.0",
           "Toltek.AspNetCore.Components.Controls": "3.0.0",
           "Toltek.AspNetCore.Components.Forms": "3.0.0",
-          "Toltek.AspNetCore.Components.Web": "3.0.0",
           "Toltek.Bbb.Client": "3.0.0"
         },
         "runtime": {
@@ -4074,6 +4113,35 @@
           "Toltek.Client.Web.dll": {}
         }
       },
+      "Toltek.Cmd/3.0.0": {
+        "dependencies": {
+          "Toltek": "3.0.0",
+          "Toltek.Cmd.Abstractions": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Cmd.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Cmd.dll": {}
+        }
+      },
+      "Toltek.Cmd.Abstractions/3.0.0": {
+        "dependencies": {
+          "Toltek.Core": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Cmd.Abstractions.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Cmd.Abstractions.dll": {}
+        }
+      },
       "Toltek.Core/3.0.0": {
         "dependencies": {
           "JetBrains.Annotations": "2025.2.4",
@@ -4087,24 +4155,6 @@
         },
         "compile": {
           "Toltek.Core.dll": {}
-        }
-      },
-      "Toltek.Data/3.0.0": {
-        "dependencies": {
-          "System.Linq.Dynamic.Core": "1.7.1",
-          "Toltek.AutoMapper": "3.0.0",
-          "Toltek.Data.Abstractions": "3.0.0",
-          "Toltek.EventBus.Abstractions": "3.0.0",
-          "Toltek.Uow.Abstractions": "3.0.0"
-        },
-        "runtime": {
-          "Toltek.Data.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Data.dll": {}
         }
       },
       "Toltek.Data.Abstractions/3.0.0": {
@@ -4121,24 +4171,6 @@
         },
         "compile": {
           "Toltek.Data.Abstractions.dll": {}
-        }
-      },
-      "Toltek.Ef/3.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "10.0.1",
-          "Microsoft.EntityFrameworkCore.InMemory": "10.0.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.1",
-          "Toltek.Data": "3.0.0",
-          "Toltek.Domain": "3.0.0"
-        },
-        "runtime": {
-          "Toltek.Ef.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "Toltek.Ef.dll": {}
         }
       },
       "Toltek.Identity.Abstractions/3.0.0": {
@@ -7313,364 +7345,378 @@
     "Toltek.Alerts.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XW+ruD48z183ApzqJM+twtJizoJUp8w8iz117GMnU9Vy0uvwskmGTjgfn6/duqhG8xxwC9BkKNHquSRct4lDSg==",
+      "sha512": "sha512-e1/Y2uzvhywgdM7eKmwSULoK3NsqryVHvnL/3OMhRSIVv4OTM8hP/LDlAs91L8i9YlAPw9nyP/x/HvCmwu9JrA==",
       "path": "toltek.alerts.abstractions/3.0.0",
       "hashPath": "toltek.alerts.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Alerts/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pK40rMMa7Yiy3BM7sGoEJb2FAHoUpYYrX+rQHlLep5on2bALNji+9POyjFlfN03evVdyTQvaZ5hnje14STgmsA==",
+      "sha512": "sha512-Nl3bBoPbObl0DkRdst5G5yfb2TCgKgvJxTz7tKTvXas+FcY8EFF0nb5s7rQlsz5gMlp861mj2XwRqCTuYQ6zjA==",
       "path": "toltek.aspnetcore.alerts/3.0.0",
       "hashPath": "toltek.aspnetcore.alerts.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Auditing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EkL9T1qNO7isqeEyRXH4K0XRj/NDp9md75LZFWwd3KQhihZvr4PNZceTsq9XsBwtaxUGSJcux2FJqNjmt9t/pA==",
+      "sha512": "sha512-Nvr2DCeNWIbTJfpZNJjMxPQBw3Z0kiamI1UKsOYFVsgqL2/cfx/x9o2VcCNoUYtrBRd9HFpz6MIsAy6+zDDjAw==",
       "path": "toltek.aspnetcore.auditing/3.0.0",
       "hashPath": "toltek.aspnetcore.auditing.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.DataTables/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Wrh62bn0JNWetEPLBXOWlbiTdS8FdoF6lLXkKmHac8mrwZYh839nH8JFD8S5PuJFmWLBLeScyLAi0JAA0J+tgg==",
+      "sha512": "sha512-LvodXIiGvj92r2eHLIgElU7WTcNfqRoT7lX+JZ2wPqobQ1i0zDmT1cObIQcUbTY0Jc5V3GsbnpY/JqHgc+6zIA==",
       "path": "toltek.aspnetcore.datatables/3.0.0",
       "hashPath": "toltek.aspnetcore.datatables.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.ExceptionHandling/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WmwZe6/dT6nKuEI+hqDsughCvWyMj7xcyMXvc/TfPy4FLKg2G6K+8dHswinf4tNqDJj+KfV1uMELQZQDu1UfOw==",
+      "sha512": "sha512-hSzKN3991Efv3eM+05imOgE6e6dawv9c9tRhWaWUPm4XnSlCZJTkU9KaHhddU5EE6hLcArlKDxRZYsJzAZcsZQ==",
       "path": "toltek.aspnetcore.exceptionhandling/3.0.0",
       "hashPath": "toltek.aspnetcore.exceptionhandling.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Files/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lV8YFQHzaO2YKc215/HN6iPlD3qQ3Wh9Pk8NYpbcwvqJ/H6mOFX/EJXKtq1R0B1Sw1/3DOTp3ez+VY9FgdJuAg==",
+      "sha512": "sha512-2LiOaFHv9nYFmKUj3t2LTBCQV7jYnXSZDJE2gNmSTzapgIfzGQfbkI5ygKpMPrxt6cCIZkiG5fUbVcBeOb2w4A==",
       "path": "toltek.aspnetcore.files/3.0.0",
       "hashPath": "toltek.aspnetcore.files.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Localization/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nmcUI9fMLgBZGWth4vYdQmzhT4WXOLjicXh330d4Zk5pf3jh321xAZQqAv5dWSh3o0WjPG2znYVbyBJkAGMdSg==",
+      "sha512": "sha512-GFJZW8n4VmP8TNpi7I59m/PKpni8+9Jfth0XxQymkH9MXPxQbg5zxTcPJ83WwxnQ1kFO5QBOVJ2T3cdu+Gz6gA==",
       "path": "toltek.aspnetcore.localization/3.0.0",
       "hashPath": "toltek.aspnetcore.localization.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.OpenApi/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c53OpscLWDYojnYc5KjrwbZm1KCL1o8toGrDmuYpTJiWC6S2C9Tyg2t4A8gRlidT33tOXSqDMYQm2ijPPi3MGg==",
+      "sha512": "sha512-wIuKSEITA1QbX8537YKoyJy99+ej5ig+iEJYrmG/Vo2sEgfc83Oobbdvw0MnexbH8H9bwrz5MB2DLD5F8s7smg==",
       "path": "toltek.aspnetcore.openapi/3.0.0",
       "hashPath": "toltek.aspnetcore.openapi.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.OpenTelemetry/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2hoDsnQkSVZ8knv+cQxZBQyEUwLyiyFjr7JWIMHXTBpY0ulraH0LYPIx2SR+4TUezXUNoFqc+1jwwn6g8U+Dvw==",
+      "sha512": "sha512-L8wrYxWbGh/9ocipQgzPS/3T3PiXOS8KLJ9DifReB6rcO6X9/l9zwfFdZfAsLejzmYrGBmfNS4/Ry2KkcJhCpg==",
       "path": "toltek.aspnetcore.opentelemetry/3.0.0",
       "hashPath": "toltek.aspnetcore.opentelemetry.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Security/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-cQRkHkjX3DcJNLqmGAxMYNaR0eLq7rEXkm8iCugvc7cDYJNhrcKlrn61B1qKdy9HsaknIVmfUv4ytEnfUaT1pQ==",
+      "sha512": "sha512-qcQOSJTFq8ohlYvBFRE6NGcMkfbkoOg/Kky2u/eey1vasIqUyiPfAnVG2Aro9dkJ+B3nL8tDNYlEzKl6ka+eoA==",
       "path": "toltek.aspnetcore.security/3.0.0",
       "hashPath": "toltek.aspnetcore.security.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.SignalR/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-54zX5sz0UHU25INDjWrFzjxobrkyfgZCcZZVYG66sa1NY16CdZMvVjEDQRPVuC9iUCG+5FDsZjiwqk5qqeZDNw==",
+      "sha512": "sha512-ZAjfH0fxh2BZTZHqAVKKVqyki6vodg1a6zpZAJjQKZltXcITP2XHaVBKh0TAKRofhyBlKjqL+VBmJ5mqDyUaEg==",
       "path": "toltek.aspnetcore.signalr/3.0.0",
       "hashPath": "toltek.aspnetcore.signalr.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Swashbuckle/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QvFpOdpwhjSMnfWhp4tUH/I8fe12Ncbb5HoCt14R417CV112ytKESfUoRDszp8K45CXyMQtQn5eeMbD8uJySUg==",
+      "sha512": "sha512-f8BfqkkjSAkfwtEirJ/r1igqZWnPO7s778sPrkP9NBI+Tjp+ANKl71fGzhV03kY24RWILylzSEG1ZhM/y5JlYg==",
       "path": "toltek.aspnetcore.swashbuckle/3.0.0",
       "hashPath": "toltek.aspnetcore.swashbuckle.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Tasking/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lSLmGWfqjVYT1IBf165/F+/cgUvtCgJSsymSpkaeuADhZWM7cw9BUt/8+t1ugj3J2Eyo/tdtnBlibgK/I1G3UA==",
+      "sha512": "sha512-knDYp5t6YdPzoo6vTj9mQG2+9Y/NemzkV5Qvp2EuXTNpv7mgFBw34kxACxdJ+B1XNtF27lLQFjCvGMS1XLx/hw==",
       "path": "toltek.aspnetcore.tasking/3.0.0",
       "hashPath": "toltek.aspnetcore.tasking.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Tracing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-G9BVrhjz/on+jDfuWiqGJnvpqdiO8ozIrCfI51PemQzQTilm0752vLmdoytPwrkUTF7+cpvsoun7xUzcgqOARQ==",
+      "sha512": "sha512-6WwJZyiuIdHGs/ROEL2Nndd0YpABNZCOAH93BTYdTHRnpc+p+arfYLwmoXLCuPbfcxCnDuwLUHt4az4xO6Xzlw==",
       "path": "toltek.aspnetcore.tracing/3.0.0",
       "hashPath": "toltek.aspnetcore.tracing.3.0.0.nupkg.sha512"
     },
     "Toltek.AspNetCore.Uow/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-unOLDT1n0ct7XWicPZadW5bKmkoRm511qrE7ik1icAuNgbtS9FNUkSjcUw1pXvZR4N/43OrQGH+6SPu59JD5Eg==",
+      "sha512": "sha512-dGtnppbgMdeg4CLrQDrzE6+/Y9uO1AumgLNd3zFGF6Gye6sUzxBxEk+zw/mSFu7H9HxVnEbO/5/FzK/VmH9+IQ==",
       "path": "toltek.aspnetcore.uow/3.0.0",
       "hashPath": "toltek.aspnetcore.uow.3.0.0.nupkg.sha512"
     },
     "Toltek.Auditing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4gvmq0Kz+sYhVLVZg2RGh5yH7UTrxIwKNwRtg9o829iOHqEsCg1FH/p1DG1g/K0DA7hzh7B/WkwL/1b5r3apnQ==",
+      "sha512": "sha512-hFDKa8et4q/9/bvLZRpr2lbv6u9Av5vdy9QzGXUGVy4P/HwmR7ZmrBpl31EttDdxbspDtCuLeRibg8IT8j1GSw==",
       "path": "toltek.auditing/3.0.0",
       "hashPath": "toltek.auditing.3.0.0.nupkg.sha512"
     },
     "Toltek.Auditing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wJ/+SSn8uSWeJTchzuObgeZQl9yi5vILllZlkWYxpmSjJinc8HkNMqRjGHCAPtApozWEaIYyk4L2ro05OB3DCg==",
+      "sha512": "sha512-xD6y0K4/b4D81pKRLHETt+qv8qdiGlcoq+OquC6NrmRCMVacN/3QHjN7mUUTo6MLa+nqMkEhwUU17ubSH8ejfw==",
       "path": "toltek.auditing.abstractions/3.0.0",
       "hashPath": "toltek.auditing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Auth.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Gj5KryPR6fvrhsZChz2yVOYwo2ctZKFl2eXV/lhnqkYTc1m8Otsp7sVH4C7iVDz6DThWohlwan+BmJM1TPl0Zg==",
+      "sha512": "sha512-Ay2PODc1W0qHMRodfjbosXjkehjR0VyKuU+XDcA3FVigDdJBXQS7ni57uzX9vZZFwSV9XB4o/LL2FM6OEl463Q==",
       "path": "toltek.auth.abstractions/3.0.0",
       "hashPath": "toltek.auth.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.AutoMapper/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hgYi3lf+ym9Ze/pzLP06r8wTnAbkIlTP2/gYrOGQeTFSttXmUIQEseKNSvupFDRkgO/g585AWO0a+TIt4haAmA==",
+      "sha512": "sha512-AeMLO9mV2RDBGeWXB0zIEKi/lziXM9C9gXOtWDMzhrslB7UfHOZCYQ4jBO3UwbNONl542meaNNH+JGLomQBj6w==",
       "path": "toltek.automapper/3.0.0",
       "hashPath": "toltek.automapper.3.0.0.nupkg.sha512"
     },
     "Toltek.Batching.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AoLGXH1BJIkA57kh/376BgitNH7ULkwOSSzBu5owBqY80VmHXDKgAnW+UzklGAIDPi/JZFC5gSliS4ItQ1XQaw==",
+      "sha512": "sha512-HEwbnt5Py3dWR07ZsXyt/XzA45mZxKfbYo3TdNU+mGyiUxQsas6+2var3QjUvoG87PKDxcwoh/P6yrmsZQpURQ==",
       "path": "toltek.batching.abstractions/3.0.0",
       "hashPath": "toltek.batching.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Caching.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-e18ehfxQX4C4ZzGb5+UGnZv1cdYZWAVdqxEJc4TojqLjd5x7xBB0L3GYthjdnM2sgM2IdwA80shTfzV/oZnaKw==",
+      "sha512": "sha512-wZUqsn9beaXc0GvAALbz7/30iC0FqS169PtF7B9VqIWOF+rrNXOV/TruE4Wqp5tObDPfypiRKCvRcrR0P/yT/g==",
       "path": "toltek.caching.abstractions/3.0.0",
       "hashPath": "toltek.caching.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Charts/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vFgZXsFjo4izLyKJz1dYZuBraduxDy341t+RTEgoAFxmRvzQbgVgq9v3Zl5eAZoMffQEYmoIHrBiK7lVZe6ruQ==",
+      "sha512": "sha512-iR+F7dHCsLWI+6zASxnDOmEbDg7Utj/ByBO7f/+mmeemWwW4Ai9SuMsujbwx5rTNlKB1QRVrOBShPHEBJuSljQ==",
       "path": "toltek.charts/3.0.0",
       "hashPath": "toltek.charts.3.0.0.nupkg.sha512"
     },
     "Toltek.CN.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-x255xrVa5geL5jKN6SmdebmfA6izZCx70R6S40r/vOVrKrfmKuJ8nbXO5B0DpY7wT0/kBz1+ERHovrEcC2yvaw==",
+      "sha512": "sha512-V+Qo1mjU3gQsUqsX+rsWqzSPiDoi3LYJfzNMZzrivanajbImgePCIQruQPlMSI8Ye2x5jqK1Juja/zBNllYUyw==",
       "path": "toltek.cn.abstractions/3.0.0",
       "hashPath": "toltek.cn.abstractions.3.0.0.nupkg.sha512"
+    },
+    "Toltek.Data/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Lve5x0r0RPjj5ukgoebgXZoHQPE66sSaq0b6RisdhFEt0CM2mQN+C2I+p0Bnbo9oMhzz8W1+oenuyhj14YWH/g==",
+      "path": "toltek.data/3.0.0",
+      "hashPath": "toltek.data.3.0.0.nupkg.sha512"
     },
     "Toltek.DataTables.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-5CogJ6w8UMvm69e1UKZ8yOnQKQ142OHBXRcIi38+l2MRqEiTyQBpRRvw3Y9qiE0BC0Lk7LphSgbLbaO8wOKTqg==",
+      "sha512": "sha512-Nt82XMD99hKkr7q8M+IEom2RbsKTDXLXXB+v+dYsrWbjd1AiJ8FqNsNw4IiwfQBU+aTxwdsXFRZSN3JkoxhLpQ==",
       "path": "toltek.datatables.abstractions/3.0.0",
       "hashPath": "toltek.datatables.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.DependencyInjection.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-CjYrp/OoFMl4izf6hrXJ4DmiYFc6IvF4UidMhkSlLDTmpIpaEgtWI0/szAjSb2hzArIcnXgaPgV8aShJV7JdZw==",
+      "sha512": "sha512-ApXPLZTnoBcmxUmuJ5R8Hihj0SjTa9Fid+s9GiNBQZgapbqNE1H7F28ciFR8BW2phj6IcaMGnjfOQKTrTR860w==",
       "path": "toltek.dependencyinjection.abstractions/3.0.0",
       "hashPath": "toltek.dependencyinjection.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Domain/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3sm0JeHTOyxSexpCEbkcLIQbyxvvmjRy2lSZMcJfHILVkaLF7/8hqBxpPC7gfsMn3sSdo6GFY444rhNCxkSt4Q==",
+      "sha512": "sha512-KSKvxxPChk11ubJY2MBIHB1S6YcOaK/HrbJzHrgU94nxNqbZegl03r3kBDiU/PP/VL/YdKV48Bge+Rys3aEqYw==",
       "path": "toltek.domain/3.0.0",
       "hashPath": "toltek.domain.3.0.0.nupkg.sha512"
     },
     "Toltek.Domain.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PB6pgQGAABnz+IbfLw6+wm4TTGwAcuEpVxb10Li3TvRPv0hhfU8ZuL0p0cDvoM9iRSDmJ02+BxSsYDTFqpE/nQ==",
+      "sha512": "sha512-qSJzEWLgEtCp2QWc/e6lADLtiHY7gKoNFwa0b5IJN69cKhre5ziVFPuyXARD0Sne0Rk242wMEXjwPrPqh3NpQw==",
       "path": "toltek.domain.abstractions/3.0.0",
       "hashPath": "toltek.domain.abstractions.3.0.0.nupkg.sha512"
+    },
+    "Toltek.Ef/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qZxzqn7sQc9bGQrKiwatTIyUo5oYmZyttVw5oA4MmFNuz1saFtSEr0QcnrG8B6IRpQlmnwLAGD+KoZkUvMJKzw==",
+      "path": "toltek.ef/3.0.0",
+      "hashPath": "toltek.ef.3.0.0.nupkg.sha512"
     },
     "Toltek.EventBus.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9u8/WrRYWjtmIoW5nvfiwr6Vyhp8DXj1f3KUcNtQXHUdyaOb95UOJAGOuQ9aj70XGSoYVVAAIAANjQ2KeHsMzA==",
+      "sha512": "sha512-B74UXm/E3TNWSo4bTeg6iJaMtLj6EkjQ1Co/9X3zCdqNbT6W7JN6jTn+dtDSS0mvWHBcXk86SyAMCYiZTr9mhw==",
       "path": "toltek.eventbus.abstractions/3.0.0",
       "hashPath": "toltek.eventbus.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.ExceptionHandling/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qOa5VJ7NWWM1Q9OslDEoomA12d3SkklNp+YtxYzU7j+nKHZr0uGCAkK2yzlfKMbyN1Aq6lKoV5QIccA3ozUXcQ==",
+      "sha512": "sha512-tPAzZymgpHO/7Ye8ZOsp4Lox/KyAGZVYWfhTisvcSjfr0aasgA6eEMNqykM9F3MJZUh17FaDH1oGyTu0I/h4pA==",
       "path": "toltek.exceptionhandling/3.0.0",
       "hashPath": "toltek.exceptionhandling.3.0.0.nupkg.sha512"
     },
     "Toltek.ExceptionHandling.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-1PfNCi8kyF3c77Wc0rn8zRFRefgQ+nW3x4OAggUi2LEy3Kyg0btQU9IXRtzUQkt3EsoxkMdkomwiS+bAzS6YMA==",
+      "sha512": "sha512-mF26AsH6Gu0PMd/qyYYehOHds3V1+oYYzeAEEBAImCjl0QwLRm2MUcG9nRkPUw7p0JWcAednFhEQkj05tCvcEw==",
       "path": "toltek.exceptionhandling.abstractions/3.0.0",
       "hashPath": "toltek.exceptionhandling.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Exporting.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aihBWNOhVv16C+3+yS9c2ICr3P4fPha4oC+G7G0iOY/vM3bEEinRFNTtxOkdoRod0gui+a+YYf/uh1G+Bev8rA==",
+      "sha512": "sha512-HApwjl6TD7xGg6CMY/D4KILiIJvzz0zlUbQJX02DlCOU5hiWcy1GXkFxG4pLbnzwP6KOb/q+v1eMc1k5aB6h5Q==",
       "path": "toltek.exporting.abstractions/3.0.0",
       "hashPath": "toltek.exporting.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Files.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IHlSneDjDbUYoRUjEwcnHg8F1DTl9SBykQfhu1752lwQqJjKUo0o6KBgcQoda0B8R1UcB6hnBPfxMnwVo1Q13Q==",
+      "sha512": "sha512-OZNdAhjAJQkuBZVd6VrYKgaLNAZn1VyrOKRktaYN3Utgj5RFVLrti31vfNzxfNRdecAUqj9NVJrYplQ+V9q2kg==",
       "path": "toltek.files.abstractions/3.0.0",
       "hashPath": "toltek.files.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Guids.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-o+xuebXDbH2XQLO1ZdHUPTK7qQbCJhCfxigzwhQ/4SkjuBajYwrL8r4yOQ3Pn3WPK2BSfWVZ0w/NDsNNxxC4qQ==",
+      "sha512": "sha512-6sX8S42KC9goBpROiQEAKoVq5QQLdlYa4dQWZTnqI6XNLK+7gS+vSeho25febJiV51laNHzUVpwyXY00nNCKdw==",
       "path": "toltek.guids.abstractions/3.0.0",
       "hashPath": "toltek.guids.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Http.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-COEFtycJsI/lZRrLKmGs3gmdS75yHz00UCzvSBnI3fPT2FQvVqztvkREzBe7nFNJqPLfupd6SXf0TwDWDN4IvQ==",
+      "sha512": "sha512-SnrOlEYhvUFFHmQvM+LfcXlIqvv5ePkdbnISEXE/pd+XupMSp/phZWFP9X8T0Hdw0LOfvw7C/2TlBNKLlyBRSw==",
       "path": "toltek.http.abstractions/3.0.0",
       "hashPath": "toltek.http.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Importing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UgxGsLtJ9nfcwwDMk2CtErUck15MYJTRhqq6dLD3Rkr6KeqiL1sqk41tDk9BD2r3+t2pzOTzw0MVdeXv/x+UOA==",
+      "sha512": "sha512-qecN7chuB+p+P+1NwFJE3VnWLnf+f+4btZZGH3tmSIqoLytFPynBzB8VN2l18azitktbBI/DNl8qxZA2o27KgQ==",
       "path": "toltek.importing.abstractions/3.0.0",
       "hashPath": "toltek.importing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Json/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aJLdhUKY/rJ2NqqEkTGQqz+jQ9p7+e6Psp9t0y7S6eWaaiCsC62oGfSv9b68GEyLqI7v6P8PK8FHOFN6xn6Y2g==",
+      "sha512": "sha512-pYOg5n4gKcdaFsQT5ELBaAzxNpYtPIoqgeWnjhngW0hJgjL626kuMz7PbYhaJpfWcT2MO+oqVitrVl1AnWAlaQ==",
       "path": "toltek.json/3.0.0",
       "hashPath": "toltek.json.3.0.0.nupkg.sha512"
     },
     "Toltek.Json.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TkjroVdH8eEm+y6EwLTNJ/pqx/UKLVtiyXljpURk4+94jxLVOtWfyVa7GcIQkH2CY6G8sI1a1kOUvP+en+2Rqw==",
+      "sha512": "sha512-5xmZqT8vWVUAnUC0j2e0k3b67V72STC7hDMwk376PaRiEuNWw9+i45bXVvLpioWtpdSAiSqvmnJ14m3as00EeQ==",
       "path": "toltek.json.abstractions/3.0.0",
       "hashPath": "toltek.json.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Localization/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2O+D5KDBrLBNsv9ZPY6dMznGz3TVvobsGg3VMukP5wJunOgijFUVa8dnD1h7JUMzIUpQP0WkG9Ly8Ojesjl66w==",
+      "sha512": "sha512-vE2wFUx18iXwHUyMPZDbzBOz0/NtDLD1npXs32qYJSgNo6pzPhgCjZnbUVSsVpbyT4zU1akmrsgiXT2vVZhQlw==",
       "path": "toltek.localization/3.0.0",
       "hashPath": "toltek.localization.3.0.0.nupkg.sha512"
     },
     "Toltek.Localization.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-A+Iq/Y8QpaOTd6/2shdp0AlkxaL6dAw0ykbrXbayhpOqvWZgOWuAefQVfaMIJ8FWkXynuJYJXV++DHxvVPDhGw==",
+      "sha512": "sha512-vZOUXlF829W/jfwRhIVfldlEFrGbRGfMYxLLbeurxFqDeIyF/LcouNnwZye33PV1UcvMMK9FBZpFbDFGVZboOQ==",
       "path": "toltek.localization.abstractions/3.0.0",
       "hashPath": "toltek.localization.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Logging.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AXeU08Ua1Q6yVai15yEAFBHLKYhX8iv2MUrNen9gXm2/WFwg52MLY3oSHmSQSl+xSqWpqxa9Ygt4/9+C9gncUw==",
+      "sha512": "sha512-J0xeXM4zAKojp4TVcXhsvfdX9PMs3KwcH1dlFwJcz1BAAfBAvLC7nAtUF/0Uy0GRxQvv0mrXMde7U+BGbdtJ2g==",
       "path": "toltek.logging.abstractions/3.0.0",
       "hashPath": "toltek.logging.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.MultiTenancy/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uJuYu6dhsXa8EkA1ULfkwEByxcyEQV0dOzQCwnk9IQSZO5Nrf7fb3PYhAqfpGhWfy9PGnxe6RVRKWR7Ju79FVQ==",
+      "sha512": "sha512-w+EwpfyRy/ThkZdlN8Pt/kjysnd06DWqZ1AXiXLt12NKHbcjj7/amkUs2GPRYxGHkw+KmuOFGRDlhW9qV8RxJA==",
       "path": "toltek.multitenancy/3.0.0",
       "hashPath": "toltek.multitenancy.3.0.0.nupkg.sha512"
     },
     "Toltek.MultiTenancy.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mvxeycVRi3KmAcJSsW27IxjeSlsN30k/lzOuk00REVG+hfcx8o6LPl7oiVvPQdu35ibZ5TQiyC0syhqewXkuKg==",
+      "sha512": "sha512-bXqZTzR+blI34T/f1LvZ94ZW4MNrdSBQMUVo9Xoz+Hmo9qgGOpTTnEstc7kPZ0iie3Hd7ZpvekCnGp4xCemvng==",
       "path": "toltek.multitenancy.abstractions/3.0.0",
       "hashPath": "toltek.multitenancy.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.ObjectMapping/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-0x97I2CbSPxTUnDXaR9mIaxiFvDvzGkkzrdK1M9WNANykXQO2b/Vgv6CW3dW4EMb/MKHZ0XipPDUo6yt0PIgdA==",
+      "sha512": "sha512-8HXOeAl16MO6CyZauYE3RKYYv4jrUApHqjAi1lOhN1e7gg7ZanVALaI7DCEHzp5OukTuJX5mRoKoVuz/7LX2oA==",
       "path": "toltek.objectmapping/3.0.0",
       "hashPath": "toltek.objectmapping.3.0.0.nupkg.sha512"
     },
     "Toltek.ObjectMapping.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dcE+5XFf4KRvq7iYNGDwIFLvXURAqV18UI4KGKYo//ooMO21Wifsj71+O3Hp4FBpONjknahlGxy++KLPq6mPxw==",
+      "sha512": "sha512-CebVx4NOIFZsq9xOysVJZYLho1cSm/iPDcKHOmc4A1vheu0LvCAQeDET30G2QFKkG5Bac+fapzkrsL1/qnVNuA==",
       "path": "toltek.objectmapping.abstractions/3.0.0",
       "hashPath": "toltek.objectmapping.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.OpenTelemetry/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bm+0piaJUurd5Rv0Wwbgl7lRyplnVcn6vQEYI4zKHEWkQeYEdHH3FphfEdSgz8+KX1wkiCi06MMTRzUqexne7w==",
+      "sha512": "sha512-jyRI+Zu8v3hdxh8tZp8nZQ9ynSV+rMSrOowLzNrQKpVldN6og2tjzqUErXmfwcwVNW29AeyLUaDxa6mNlqdL9Q==",
       "path": "toltek.opentelemetry/3.0.0",
       "hashPath": "toltek.opentelemetry.3.0.0.nupkg.sha512"
     },
     "Toltek.Proxy.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XKa2DCjShZc3KUH1iD6oekQjtPrKGdclgxzWfpmn3i4itBdlXdEBtsr6bvBtLKrwCjhUP2AlQbW1rQ62pS/PfQ==",
+      "sha512": "sha512-6jVNhqRpaezptdRt7r95yl33tHGKh1sTfd1WYjLfZ/mPjmYYjVzy5E8Ce8A23YVwcR4zKbkQC6l4+hFDCi8+cA==",
       "path": "toltek.proxy.abstractions/3.0.0",
       "hashPath": "toltek.proxy.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Security/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/jzNxCWvlhaikJnjb5dfWpezmEU7uFlT3qJbO7/qPJ3uYRmeIR7bYwrs88wOxDM+Oqminem7DlTHJmr+66dAWQ==",
+      "sha512": "sha512-tZq2jznS6jscHS/ptjzcl4c7nQE0VMfcq//tzIHvYdDcgw/moPZsnbSIX6usuJgOOukwi7GYMB9qkDbf6kGmNQ==",
       "path": "toltek.security/3.0.0",
       "hashPath": "toltek.security.3.0.0.nupkg.sha512"
     },
     "Toltek.Security.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kbFlrnOQouU3Vs43BIGn3hkcI2gthrbvRTwOoh//6LFjxzJneK4kinQUXPG3GPHVspLqYGMAtIkonwDRZiIlog==",
+      "sha512": "sha512-yLHZMtB68EabdfUUzKAvgvXU7ll5CkEDy/YTxI3iWkSjsTASJHXZICEnAzVC6rUuIABIWAV6ooFuRKBUZ7/riA==",
       "path": "toltek.security.abstractions/3.0.0",
       "hashPath": "toltek.security.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Seeding/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-XaLqsTcfR9/Y0un0nZbFR+n1G1/pCpUIieIs4I4swaMB1GtSCFS2mhj99wMGN31gEakWRQJ5gCh5JIfeRfGzcw==",
+      "sha512": "sha512-GXi44fqhFSBKTh5uYVN+fO6JniUWI+lnO38qYtI9ucDjpw0vSSI+Q95KiUYFoRTcSLl8w1x7SkWfswtdqlKlPA==",
       "path": "toltek.seeding/3.0.0",
       "hashPath": "toltek.seeding.3.0.0.nupkg.sha512"
     },
     "Toltek.Seeding.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-efGf0c5I2u6UJtKswIW4kSWHARRHKLwVPmDbBD79shLxCWfB81lLyMS/eCEwfk5XsaCLIGskGQtEYYyTdtvoUw==",
+      "sha512": "sha512-luFlqo5Pcfc/Z0CBA4XR2REWBrJjdRW6xGEtc3A/+auCH6FlimKaftYaMDzf/8pkU2FvBzs15QImRQAhLF7WBg==",
       "path": "toltek.seeding.abstractions/3.0.0",
       "hashPath": "toltek.seeding.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Settings/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P8ikNAjRWVLUUwjF4fJKz5CcIqec9zb55YIuVwCmdxl6IP0LYsseGnWpsiljyq9e85fWnod6nmOp5TAwxwwiew==",
+      "sha512": "sha512-UKOwtp03xv4Ya2PcCCHhTb+d7gkVs1+I2bRVSWdY5LvkHYfPfEdRP0LvXb66lcEpGv9I/n4E1x7LgDgkKCDSqA==",
       "path": "toltek.settings/3.0.0",
       "hashPath": "toltek.settings.3.0.0.nupkg.sha512"
     },
     "Toltek.Settings.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wMUWG3oqriSNKHG0FEH9hnUVMyu4sLyZp+RCPqXPXer0DdmBFJ2LColnjQWmc+v0RuLYo4mn01tX3LdoG3OCsA==",
+      "sha512": "sha512-aDwtMhw5YFDEnBieemU/gc8iiXnSG1UisfovzPFjaPIf84YUsftPxfxlZGu8uiMHxkJdS9BSykiGBt9bBoJzSA==",
       "path": "toltek.settings.abstractions/3.0.0",
       "hashPath": "toltek.settings.abstractions.3.0.0.nupkg.sha512"
     },
@@ -7684,77 +7730,77 @@
     "Toltek.Tasking.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qJjyO+HGpHsEEawN8LYTKG9Np1DLYjI4c8kYJySx4UsiW1pIV/jpLshn7YHZr5nl7AZ1GMc6wyjM6vx0G/PvYA==",
+      "sha512": "sha512-u/wKhVkhZYiZmBeoU9oENoglE5kn0PEE3qp/ilCzRh1BAhy90Q3HXr0cwWx1inbxHt+8Zd/ocxSMcOvt6Sui5w==",
       "path": "toltek.tasking.abstractions/3.0.0",
       "hashPath": "toltek.tasking.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Threading/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hg7AbVA+50uCSO72Get4ZwPwJo7Xve/GR5GgsO7TIs4rqSoWbzVWEX81MNubYVY6f9NEgEE62QtWG+NUVAmLUQ==",
+      "sha512": "sha512-4XOK4qbVE78EHHUn+UlB/1LNMw4v4OeWU4PfSJTSv+sK484t6jXMSE2+T0M1HnskbejZw6AkIdTjG3QWZb1Ylw==",
       "path": "toltek.threading/3.0.0",
       "hashPath": "toltek.threading.3.0.0.nupkg.sha512"
     },
     "Toltek.Threading.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Z+zDu3g9OQiApQkqkJEBHfYLAWrPOJjCeOW5x8WpUzgF9iDnSwlm7EPVreuE9wRuaPwoxClct6SzX1Y9u9jOfA==",
+      "sha512": "sha512-LL/QUS8cPapQ82kl7kkjedtoLnMxeSJ1gGajikA2zdZz6n22uq28lYzRQ3mCdfq9v1hIXY6llSf2P29BmiYScQ==",
       "path": "toltek.threading.abstractions/3.0.0",
       "hashPath": "toltek.threading.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Timing/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VOKQfD8ZdloY7hFIRQ9dkLZSMgI+xULA+9x7ASt4oFHCNMW2pyVzlvNQXq132LnvZEWqV8PQKPeL4ld/+JHO3A==",
+      "sha512": "sha512-7sDVQRWkJhFcMMlWUoI6ytD4LsWr54TFh8OwLiHB1N+Q6oshKyx3GkbfjEHT4OTU1k7qu9x4NpBX2Dq4XUiE5Q==",
       "path": "toltek.timing/3.0.0",
       "hashPath": "toltek.timing.3.0.0.nupkg.sha512"
     },
     "Toltek.Timing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VshQoamyCIWPrnJGrhoIkySJtdCWHyu/0IO5wJOdZizvQulLFyKa6yENuFIgDF5ZhCZcbPTMWY9EMkvrZqZj/Q==",
+      "sha512": "sha512-+ZJn6X3MUeCizLVoDKv6CU+AI8USlMmtSuczl4WSsb1j0xU9S8RoqelNsfgwuSztXK9TQ2nGaZFYSxTa1b/whw==",
       "path": "toltek.timing.abstractions/3.0.0",
       "hashPath": "toltek.timing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Tracing.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-52hjOkVp0YaVr7UXuNj+58QfiufZoRJmbK+HoK6rwUFI1MuBqiYQN7th6nTuNYrRBCpdQ8ALJYDucX8ulM3qew==",
+      "sha512": "sha512-vn/NR8yJoX7aJGVyUehDqaRYFfVPhSgYdV9+6wpyUhEGts2jUSJY4lbMV2kQ2j0wlrMFlzRCCF0Q6kxg9gls0w==",
       "path": "toltek.tracing.abstractions/3.0.0",
       "hashPath": "toltek.tracing.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Uow/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Q07JEBoe2c4m0kvm7H3O0AcNJfKJWepVUVpcPIYMdaGiEUICYjWm0y0DMdUBNYAsKUXgyqekuunuBhfwrsm66A==",
+      "sha512": "sha512-RgcSwbwjRHL+G+gXwjjqpPzyocEn+sEvvhkWeXBlUtzrlCSHlFl60Tecpsad7eSmKWYLQyD5CNUcyJHLBiRaEA==",
       "path": "toltek.uow/3.0.0",
       "hashPath": "toltek.uow.3.0.0.nupkg.sha512"
     },
     "Toltek.Uow.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-b6oecWywqImA4H2twV+9k83PcHRYsl1UD6vf+o+bwwpWsF0/yL2OivPFalFGjxrUKarKKIzAH2PhIw1GGSyCGA==",
+      "sha512": "sha512-4YeJg/RCAqwqLBs5l/zFeh7Wpj5CUfxSKYiW5wTsgSYwvNoTC1rzhEzKYKmjHrSGO01KNN269pzfA8ov99t7lg==",
       "path": "toltek.uow.abstractions/3.0.0",
       "hashPath": "toltek.uow.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.Validation.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gG+pnBhuLDLO9Qn5K6OjPP1FMj/l17Uo4KCBppHy4/xBAvmh1RmA5Mk4DdaTOJoNas3no46HW5Wub9c2Oc4WoQ==",
+      "sha512": "sha512-8aHVWerM+L3RoS1wnr6DUKq8TtMFKtixqLaGlYpFqQXY+eE5adxOWYsOXPXNXwW6/VuL/XR9AJOQ44vMDs6DYQ==",
       "path": "toltek.validation.abstractions/3.0.0",
       "hashPath": "toltek.validation.abstractions.3.0.0.nupkg.sha512"
     },
     "Toltek.VirtualFileSystem/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q15geh2Bzq5GxXvW7xhY4lgb75ou/rviSEjGGncKxlMXhInAL/yTd93GFisSPvk2QwVZrUsH3r0PQDXBnhcBDQ==",
+      "sha512": "sha512-lJMOoM4msXpio2YQY2X/sa9TCWh6xjtJNHjrUUj6FUwIQXg5rVorgogTZwIq+OHn9s4kx2VCwnz3BpqW2wCctw==",
       "path": "toltek.virtualfilesystem/3.0.0",
       "hashPath": "toltek.virtualfilesystem.3.0.0.nupkg.sha512"
     },
     "Toltek.VirtualFileSystem.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-t5ZvYITTU/RVng33ToH288tGy6iQ4iEfuyoMeaXD/nasjjqlXObRm1nktJgdEmzwgVX/9BXCUH4U04vpFF7uHQ==",
+      "sha512": "sha512-TZiSOqwKXyhd130MRwHDRv0xh8ltRkIykHZ4np0tzRRfeYFxDQdCa1h+/lXPkSrn+j+QJURz8Rc5IUDhPTbPpg==",
       "path": "toltek.virtualfilesystem.abstractions/3.0.0",
       "hashPath": "toltek.virtualfilesystem.abstractions.3.0.0.nupkg.sha512"
     },
@@ -7887,22 +7933,22 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Toltek.Cmd/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Cmd.Abstractions/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Toltek.Core/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Toltek.Data/3.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Toltek.Data.Abstractions/3.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Toltek.Ef/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
