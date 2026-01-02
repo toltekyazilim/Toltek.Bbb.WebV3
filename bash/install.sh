@@ -1,5 +1,8 @@
 ﻿﻿#!/bin/bash
-
+if [ "$EUID" -ne 0 ]; then
+  echo "Root olarak çalıştırılmalı"
+  exit 1
+fi
 # ==============================================================================
 # Toltek Bbb WebV3 - Update Bash Script
 # Yavuz - 02/04/2025
