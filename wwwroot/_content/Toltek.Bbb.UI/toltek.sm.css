@@ -1,5 +1,4 @@
-.terminal-wrapper {
-    min-height:600px;
+.terminal-wrapper { 
     display: flex;
     flex-direction: column;
 
@@ -40,8 +39,7 @@
 }
 
 .terminal-body {
-    flex: 1 1 auto;
-    overflow-y: auto;
+    min-height: 600px;
     margin: 0;
     padding: 12px;
     color: #c9d1d9;
