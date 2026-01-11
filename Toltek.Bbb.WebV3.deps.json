@@ -3223,24 +3223,6 @@
           "lib/net10.0/Toltek.Domain.Abstractions.dll": {}
         }
       },
-      "Toltek.Ef/3.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "10.0.1",
-          "Microsoft.EntityFrameworkCore.InMemory": "10.0.1",
-          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.1",
-          "Toltek.Data": "3.0.0",
-          "Toltek.Domain": "3.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Toltek.Ef.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.0.0"
-          }
-        },
-        "compile": {
-          "lib/net10.0/Toltek.Ef.dll": {}
-        }
-      },
       "Toltek.EventBus.Abstractions/3.0.0": {
         "dependencies": {
           "Toltek.Core": "3.0.0"
@@ -4233,6 +4215,24 @@
         },
         "compile": {
           "Toltek.Data.Abstractions.dll": {}
+        }
+      },
+      "Toltek.Ef/3.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "10.0.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.1",
+          "Toltek.Data": "3.0.0",
+          "Toltek.Domain": "3.0.0"
+        },
+        "runtime": {
+          "Toltek.Ef.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        },
+        "compile": {
+          "Toltek.Ef.dll": {}
         }
       },
       "Toltek.Identity.Abstractions/3.0.0": {
@@ -7868,13 +7868,6 @@
       "path": "toltek.domain.abstractions/3.0.0",
       "hashPath": "toltek.domain.abstractions.3.0.0.nupkg.sha512"
     },
-    "Toltek.Ef/3.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-+nzj34bTi6VE12UYKA4Mu9t+dmSATXTO0l5kb+mSxCm6fqkm+4mpq8jj2XXgesnN99Z9TPDvcC58vbD1qSfk8w==",
-      "path": "toltek.ef/3.0.0",
-      "hashPath": "toltek.ef.3.0.0.nupkg.sha512"
-    },
     "Toltek.EventBus.Abstractions/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -8261,6 +8254,11 @@
       "sha512": ""
     },
     "Toltek.Data.Abstractions/3.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toltek.Ef/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
